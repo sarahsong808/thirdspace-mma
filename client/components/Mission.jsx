@@ -6,17 +6,17 @@ export default function Mission() {
     {
       icon: '⚔️',
       title: 'Forge the Athlete',
-      body: 'Every class is built around real technique, real conditioning, and real results — whether you\'re stepping into a cage or stepping onto the mat for the first time.',
+      body: 'Discipline is cultivated every session — through real technique, real conditioning, and real results. Whether you\'re stepping on the mat for the first time or preparing for competition, we train what actually works.',
     },
     {
       icon: '🧠',
       title: 'Develop the Mind',
-      body: 'Combat sports demand mental discipline. We train the whole person — patience, problem-solving, composure under pressure. You leave every session sharper than you arrived.',
+      body: 'Confidence is not given — it is earned through effort. Combat sports demand patience, problem-solving, and composure under pressure. You leave every session sharper than you arrived.',
     },
     {
       icon: '🌳',
       title: 'Become Your Best Self',
-      body: 'Third Space is the place between home and work where real growth happens. You walk in as you are. You walk out a stronger, more focused, more capable version of yourself — every time.',
+      body: 'Limitations are not permanent — they are broken, rep by rep. This is where you become someone harder to stop: on the mat and off it. Walk in as you are. Walk out further than before.',
     },
   ]
 
@@ -24,17 +24,17 @@ export default function Mission() {
     {
       stat: '≤ 10',
       label: 'Students Per Class',
-      detail: 'Most gyms pack 30+ people onto the mats and hope for the best. Here, every class is capped at 10 — so you get real corrections, real attention, and real progress.',
+      detail: 'Unlike overcrowded gyms where you vanish in a room of 20–30 people, every class is capped at 10 — ensuring individual attention, precise technical coaching, and real relationships between coach and student.',
     },
     {
       stat: '1:1',
       label: 'Coaching That Cares',
-      detail: 'Arsalan is invested in your growth personally. He knows where you are, where you\'re going, and exactly what you need to get there. You\'re not invisible here.',
+      detail: 'You are not just another body in the room. Arsalan knows where you are, where you\'re going, and exactly what you need — you are seen, corrected, and developed every session.',
     },
     {
       stat: '100%',
       label: 'Clean, Focused Space',
-      detail: 'No clutter, no chaos. A clean mat, a focused room, and an environment that respects the craft — because the space you train in reflects the standard you train to.',
+      detail: 'No chaos. No guesswork. No wasted time. A clean, professional environment where every session has purpose, structure, and direction — just consistent, deliberate progress.',
     },
   ]
 
@@ -57,7 +57,7 @@ export default function Mission() {
         <div className="max-w-3xl mb-20">
           {/* Eyebrow in white/dim here — green heading below, no red in this section */}
           <p className="text-xs font-bold tracking-[0.4em] uppercase mb-4" style={{ color: 'rgba(255,255,255,0.35)' }}>
-            Our Ethos
+            Our Philosophy
           </p>
           <h2
             id="mission-heading"
@@ -67,11 +67,31 @@ export default function Mission() {
             {/* Green used here only — red eyebrow is above, never side-by-side */}
             <span style={{ color: '#1A5C33' }}>Third Space.</span>
           </h2>
-          <p className="text-lg text-gray-400 leading-relaxed font-light max-w-2xl">
-            Not just a gym. A crucible. Third Space is the place between home and work where you
-            become a stronger, sharper, more capable version of yourself. Small classes. Attentive
-            coaching. A clean space built for serious training — and every skill level is welcome.
+          <div className="space-y-3 mb-8 max-w-2xl">
+            <p className="text-lg font-light" style={{ color: 'rgba(255,255,255,0.45)' }}>
+              Your first space is your home —{' '}
+              <span className="text-gray-400">comfort, recovery, and grounding.</span>
+            </p>
+            <p className="text-lg font-light" style={{ color: 'rgba(255,255,255,0.45)' }}>
+              Your second space is your work —{' '}
+              <span className="text-gray-400">where you produce, perform, and provide.</span>
+            </p>
+            <p className="text-xl text-white font-semibold">
+              Your third space is where you are forged.
+            </p>
+          </div>
+          <p className="text-lg text-gray-400 font-light leading-relaxed max-w-2xl mb-6">
+            A space you choose intentionally — not out of obligation, but out of a desire to grow,
+            to evolve, and to become someone you&apos;re proud of.
           </p>
+          <div className="max-w-2xl border-l-2 pl-5" style={{ borderColor: '#1A5C33' }}>
+            <p className="text-xl text-white font-light leading-relaxed">
+              We believe martial arts is more than training —{' '}
+              <span className="font-semibold" style={{ color: '#1A5C33' }}>
+                it is a vehicle for transformation.
+              </span>
+            </p>
+          </div>
         </div>
 
         {/* Differentiator strip */}
@@ -94,7 +114,7 @@ export default function Mission() {
         </div>
 
         {/* Pillar cards */}
-        <div className="grid md:grid-cols-3 gap-6" role="list">
+        <div className="grid md:grid-cols-3 gap-6 mb-16" role="list">
           {pillars.map(({ icon, title, body }) => (
             <article
               key={title}
@@ -111,6 +131,27 @@ export default function Mission() {
               <p className="text-gray-400 leading-relaxed font-light text-sm">{body}</p>
             </article>
           ))}
+        </div>
+
+        {/* Closing goals statement */}
+        <div
+          className="max-w-2xl p-8 border rounded-sm"
+          style={{ background: '#111', borderColor: '#1e1e1e' }}
+        >
+          <p className="text-gray-500 text-sm font-light leading-relaxed mb-4 uppercase tracking-widest">
+            Whether your goal is to —
+          </p>
+          <ul className="space-y-2 mb-6">
+            {['Get in the best shape of your life', 'Learn real self-defense', 'Test yourself in competition'].map((goal) => (
+              <li key={goal} className="flex items-center gap-3 text-white font-medium text-base">
+                <span style={{ color: '#C8102E', fontWeight: 700 }}>—</span>
+                {goal}
+              </li>
+            ))}
+          </ul>
+          <p className="text-lg text-white font-semibold leading-snug">
+            This is where you sharpen your body, your mind, and your character.
+          </p>
         </div>
       </div>
     </section>

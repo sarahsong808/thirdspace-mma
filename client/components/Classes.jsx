@@ -15,7 +15,7 @@ export default function Classes() {
     },
     {
       id: 'jiu-jitsu',
-      label: 'Brazilian Jiu-Jitsu',
+      label: 'Jiu-Jitsu (No-Gi)',
       tagline: 'Ground Mastery',
       description:
         'The backbone of MMA grappling. BJJ teaches you to control, submit, and dominate from every position — standing and on the mat.',

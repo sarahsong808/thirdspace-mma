@@ -4,11 +4,11 @@
 
 /** @type {ClassEntry[]} */
 const SCHEDULE = [
-  { day: 'Monday',    time: '7:30 PM', class: 'Brazilian Jiu-Jitsu',        instructor: 'Arsalan Mayel', level: 'All Levels' },
+  { day: 'Monday',    time: '7:30 PM', class: 'Jiu-Jitsu (No-Gi)',        instructor: 'Arsalan Mayel', level: 'All Levels' },
   { day: 'Tuesday',   time: '7:30 PM', class: 'Muay Thai',                  instructor: 'Arsalan Mayel', level: 'All Levels' },
-  { day: 'Wednesday', time: '7:30 PM', class: 'Brazilian Jiu-Jitsu',        instructor: 'Arsalan Mayel', level: 'All Levels' },
+  { day: 'Wednesday', time: '7:30 PM', class: 'Jiu-Jitsu (No-Gi)',        instructor: 'Arsalan Mayel', level: 'All Levels' },
   { day: 'Thursday',  time: '7:30 PM', class: 'Muay Thai',                  instructor: 'Arsalan Mayel', level: 'All Levels' },
-  { day: 'Sunday',    time: '1:00 PM', class: 'Open Mat — All Disciplines', instructor: 'Arsalan Mayel', level: 'All Levels' },
+  { day: 'Sunday',    time: '1:00 PM', class: 'MMA', instructor: 'Arsalan Mayel', level: 'All Levels' },
 ]
 
 /**

@@ -10,7 +10,7 @@ describe('Classes', () => {
   it('renders a card for each discipline', () => {
     render(<Classes />)
     expect(screen.getByText('Muay Thai')).toBeInTheDocument()
-    expect(screen.getByText('Brazilian Jiu-Jitsu')).toBeInTheDocument()
+    expect(screen.getByText('Jiu-Jitsu')).toBeInTheDocument()
     expect(screen.getByText('Wrestling')).toBeInTheDocument()
     expect(screen.getByText('MMA')).toBeInTheDocument()
   })

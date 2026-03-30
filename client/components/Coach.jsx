@@ -75,21 +75,19 @@ export default function Coach() {
 
             <div className="space-y-4 text-gray-400 font-light leading-relaxed text-[15px] mb-10">
               <p>
-                Arsalan Mayel brings over 14 years of competitive martial arts experience to every
-                class he teaches. As an active professional MMA fighter, he doesn&apos;t just coach
-                the sport — he lives it.
+                Arsalan Mayel is the head coach and founder of Third Space MMA, bringing over 14 years of experience across Boxing, Muay Thai, Jiu-Jitsu, Wrestling and Mixed Martial Arts.
               </p>
               <p>
-                Classes are intentionally capped at 10 students because Arsalan believes coaching
-                is personal. He watches every rep, corrects every position, and knows exactly where
-                each student is in their journey. Unlike volume gyms where you blend into
-                the crowd, here your growth is his responsibility — and he takes that seriously.
+                A professional fighter and brown belt in Jiu-Jitsu. Arsalan has competed in over 100 matches across striking and grappling martial arts, such as Boxing, Muay Thai, Jiu Jitsu, and MMA.  His journey has taken him across the world, training and fighting in Thailand, Europe, and the United States, developing a well-rounded, high-level understanding of combat sports.
               </p>
               <p>
-                Whether you&apos;re a complete beginner stepping on the mat for the first time or a
-                competitive fighter preparing for your next bout, Arsalan meets you where you are and
-                builds you into something sharper. The door is open to all skill levels. The standard
-                is always high.
+                Beyond his experience, Arsalan is known for his ability to connect with people. His coaching style is personable, attentive, and detail-oriented, creating an environment where students feel supported while still being pushed to grow.
+              </p>
+              <p>
+                He takes pride in working with complete beginners just as much as experienced athletes, breaking down complex techniques into simple, clear steps that anyone can understand and apply. Whether someone is stepping on the mats for the first time or preparing for competition, his goal is to meet them where they are and help them level up.
+              </p>
+              <p>
+                As a coach, he has cornered and developed fighters across multiple disciplines, helping students build not only technical skill, but also confidence, discipline, and mental toughness.
               </p>
             </div>
 
@@ -110,7 +108,7 @@ export default function Coach() {
 
             {/* Specialties */}
             <div className="flex flex-wrap gap-2">
-              {['Muay Thai', 'Brazilian Jiu-Jitsu', 'MMA Strategy', 'Fight Preparation', 'All Levels'].map((tag) => (
+              {['Muay Thai', 'Jiu-Jitsu', 'MMA Strategy', 'Fight Preparation', 'All Levels'].map((tag) => (
                 <span
                   key={tag}
                   className="text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-sm"

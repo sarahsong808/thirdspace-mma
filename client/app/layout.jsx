@@ -78,7 +78,7 @@ export default function RootLayout({ children }) {
     '@type': 'SportsActivityLocation',
     name: 'Third Space MMA',
     description:
-      'Professional MMA gym in North Hollywood, CA offering Muay Thai, Brazilian Jiu-Jitsu and MMA classes for all skill levels.',
+      'Professional MMA gym in North Hollywood, CA offering Muay Thai, Jiu-Jitsu and MMA classes for all skill levels.',
     url: 'https://thirdspacemma.com',
     telephone: '+1-818-471-8867',
     address: {

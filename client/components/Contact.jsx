@@ -34,7 +34,7 @@ export default function Contact() {
 
   const interests = [
     'Muay Thai',
-    'Brazilian Jiu-Jitsu',
+    'Jiu-Jitsu',
     'MMA',
     "Women's Class",
     'Thailand Fighters Retreat',
@@ -232,13 +232,14 @@ export default function Contact() {
                 {/* Phone */}
                 <div>
                   <label htmlFor="phone" className="block text-xs font-bold tracking-widest uppercase text-gray-400 mb-2">
-                    Phone
+                    Phone <span style={{ color: '#C8102E' }}>*</span>
                   </label>
                   <input
                     id="phone"
                     name="phone"
                     type="tel"
                     autoComplete="tel"
+                    required
                     value={form.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-sm bg-transparent border text-white text-sm placeholder-gray-600 focus:outline-none focus:border-red-600 transition-colors"
