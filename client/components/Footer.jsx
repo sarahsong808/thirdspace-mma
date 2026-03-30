@@ -33,22 +33,29 @@ export default function Footer() {
       style={{ background: '#060606', borderTop: '1px solid #161616' }}
     >
       <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-16">
           {/* Brand */}
           <div>
-            <div className="mb-4">
-              <p
-                className="text-3xl font-black tracking-widest uppercase leading-none"
-                style={{ fontFamily: 'var(--font-bebas, Impact)', color: '#ffffff' }}
-              >
-                Third Space
-              </p>
-              <p
-                className="text-xs font-bold tracking-[0.4em] uppercase mt-0.5"
-                style={{ color: '#C8102E' }}
-              >
-                MMA
-              </p>
+            <div className="mb-4 flex items-center gap-3">
+              <img
+                src="/images/logo.png"
+                alt="Third Space MMA"
+                className="w-12 h-12 object-contain"
+              />
+              <div>
+                <p
+                  className="text-2xl font-black tracking-widest uppercase leading-none"
+                  style={{ fontFamily: 'var(--font-bebas, Impact)', color: '#ffffff' }}
+                >
+                  Third Space
+                </p>
+                <p
+                  className="text-xs font-bold tracking-[0.4em] uppercase mt-0.5"
+                  style={{ color: '#C8102E' }}
+                >
+                  MMA
+                </p>
+              </div>
             </div>
             <p className="text-gray-600 text-sm font-light leading-relaxed mb-4">
               San Fernando Valley’s premier combat sports gym. Jiu-Jitsu &amp; Muay Thai — all levels welcome.

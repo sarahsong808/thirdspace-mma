@@ -14,12 +14,12 @@ describe('Hero', () => {
 
   it('renders the location eyebrow text', () => {
     render(<Hero />)
-    expect(screen.getByText(/North Hollywood/i)).toBeInTheDocument()
+    expect(screen.getByText(/San Fernando, CA · San Fernando Valley/i)).toBeInTheDocument()
   })
 
   it('renders the primary CTA link pointing to #pricing', () => {
     render(<Hero />)
-    const cta = screen.getByRole('link', { name: /Start Your Free Trial/i })
+    const cta = screen.getByRole('link', { name: /Start Training/i })
     expect(cta).toBeInTheDocument()
     expect(cta).toHaveAttribute('href', '#pricing')
   })

@@ -11,7 +11,7 @@ beforeEach(() => {
 describe('Contact', () => {
   it('renders the section heading', () => {
     render(<Contact />)
-    expect(screen.getByRole('heading', { name: /Your First Class/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /Book Your First Class/i })).toBeInTheDocument()
   })
 
   it('renders the form with all fields', () => {
@@ -25,7 +25,7 @@ describe('Contact', () => {
 
   it('renders the submit button', () => {
     render(<Contact />)
-    expect(screen.getByRole('button', { name: /Claim My Free Class/i })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: /Book My First Class/i })).toBeInTheDocument()
   })
 
   it('shows success state after successful form submission', async () => {
@@ -36,7 +36,7 @@ describe('Contact', () => {
     fireEvent.change(screen.getByLabelText(/Full Name/i), { target: { value: 'John Doe' } })
     fireEvent.change(screen.getByLabelText(/Email/i), { target: { value: 'john@example.com' } })
 
-    fireEvent.click(screen.getByRole('button', { name: /Claim My Free Class/i }))
+    fireEvent.click(screen.getByRole('button', { name: /Book My First Class/i }))
 
     await waitFor(() => {
       expect(screen.getByText(/Message Sent/i)).toBeInTheDocument()
@@ -51,7 +51,7 @@ describe('Contact', () => {
     fireEvent.change(screen.getByLabelText(/Full Name/i), { target: { value: 'Jane' } })
     fireEvent.change(screen.getByLabelText(/Email/i), { target: { value: 'jane@example.com' } })
 
-    fireEvent.click(screen.getByRole('button', { name: /Claim My Free Class/i }))
+    fireEvent.click(screen.getByRole('button', { name: /Book My First Class/i }))
 
     await waitFor(() => {
       expect(screen.getByRole('alert')).toBeInTheDocument()

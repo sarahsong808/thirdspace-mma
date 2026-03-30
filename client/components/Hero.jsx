@@ -52,7 +52,7 @@ export default function Hero() {
     <section
       ref={sectionRef}
       id="hero"
-      aria-label="Third Space MMA — Elite combat sports gym in North Hollywood"
+      aria-label="Third Space MMA — Elite combat sports gym in San Fernando"
       className="relative flex items-center justify-center min-h-screen overflow-hidden"
       style={{ cursor: cursor.visible ? 'none' : 'auto' }}
     >
@@ -133,74 +133,73 @@ export default function Hero() {
           className="opacity-0 translate-y-6 transition-all duration-700 inline-block mb-6 text-xs font-bold tracking-[0.4em] uppercase px-4 py-1.5 border rounded-sm"
           style={{ color: '#C8102E', borderColor: 'rgba(200,16,46,0.5)' }}
         >
-          North Hollywood, CA · San Fernando Valley
+          San Fernando, CA · San Fernando Valley
         </p>
 
         {/* Main headline */}
         <h1
           data-animate
-          className="opacity-0 translate-y-6 transition-all duration-700 heading-display text-[clamp(3.5rem,12vw,9rem)] text-white leading-none mb-4"
+          className="opacity-0 translate-y-6 transition-all duration-700 heading-display text-[clamp(2.4rem,10vw,9rem)] text-white leading-none mb-4"
         >
-          Train Like a{' '}
-          <span style={{ color: '#C8102E' }}>Fighter.</span>
+          Where You Become{' '}
+          <span style={{ color: '#C8102E' }}>Your Best Self.</span>
         </h1>
 
         <h2
           data-animate
-          className="opacity-0 translate-y-6 transition-all duration-700 heading-display text-[clamp(2rem,6vw,5rem)] leading-none mb-8"
+          className="opacity-0 translate-y-6 transition-all duration-700 heading-display text-[clamp(1.6rem,5vw,5rem)] leading-none mb-8"
           style={{ color: 'rgba(255,255,255,0.6)' }}
         >
-          Think Like a Champion.
+          Third Space MMA
         </h2>
 
         {/* Sub-copy */}
         <p
           data-animate
-          className="opacity-0 translate-y-6 transition-all duration-700 text-base md:text-lg text-gray-300 font-light max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="opacity-0 translate-y-6 transition-all duration-700 text-base md:text-lg text-gray-300 font-light max-w-2xl mx-auto mb-4 leading-relaxed"
         >
           Muay Thai · Jiu-Jitsu · MMA
           <br />
-          Coached by pro MMA fighter <strong className="text-white font-semibold">Arsalan Mayel</strong> — all skill levels welcome.
+          Coached by pro MMA fighter <strong className="text-white font-semibold">Arsalan Mayel</strong> — 14+ years experience.
         </p>
+
+        {/* Trust builders */}
+        <div
+          data-animate
+          className="opacity-0 translate-y-6 transition-all duration-700 flex flex-wrap items-center justify-center gap-3 mb-8"
+        >
+          <span className="flex items-center gap-1.5 text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-sm" style={{ background: 'rgba(200,16,46,0.12)', color: '#C8102E', border: '1px solid rgba(200,16,46,0.25)' }}>
+            🔥 Small groups — max 10 students
+          </span>
+          <span className="flex items-center gap-1.5 text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-sm" style={{ background: 'rgba(255,255,255,0.05)', color: '#aaa', border: '1px solid rgba(255,255,255,0.1)' }}>
+            ⚠️ Limited spots per class
+          </span>
+        </div>
 
         {/* CTAs */}
         <div
           data-animate
-          className="opacity-0 translate-y-6 transition-all duration-700 flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="opacity-0 translate-y-6 transition-all duration-700 flex flex-col items-center justify-center gap-3"
         >
-          <a
-            href="#pricing"
-            className="w-full sm:w-auto inline-flex items-center justify-center px-10 py-4 text-sm font-bold tracking-widest uppercase rounded-sm transition-all duration-200 hover:scale-105 hover:brightness-110 active:scale-100 shadow-lg shadow-red-900/30"
-            style={{ background: '#C8102E', color: '#fff' }}
-          >
-            Start Your Free Trial
-          </a>
-          <a
-            href="#classes"
-            className="w-full sm:w-auto inline-flex items-center justify-center px-10 py-4 text-sm font-bold tracking-widest uppercase rounded-sm border transition-all duration-200 hover:bg-white/10 hover:border-white"
-            style={{ borderColor: 'rgba(255,255,255,0.3)', color: '#fff' }}
-          >
-            Explore Classes
-          </a>
-        </div>
-
-        {/* Social proof strip */}
-        <div
-          data-animate
-          className="opacity-0 translate-y-6 transition-all duration-700 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-16 text-gray-500 text-xs font-semibold tracking-widest uppercase"
-        >
-          <span className="flex items-center gap-2">
-            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm.5-11H11v6l5.25 3.15.75-1.23-4.5-2.67V9z" />
-            </svg>
-            14+ Years Experience
-          </span>
-          <span className="text-gray-700 hidden sm:inline">·</span>
-          <span>Max 10 Per Class</span>
-          <span className="text-gray-700 hidden sm:inline">·</span>
-          <span>All Levels Welcome</span>
-          <span className="text-gray-700 hidden sm:inline">·</span>
-          <span>Women&apos;s Classes</span>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
+            <a
+              href="#contact"
+              className="w-full sm:w-auto inline-flex items-center justify-center px-10 py-4 text-sm font-bold tracking-widest uppercase rounded-sm transition-all duration-200 hover:scale-105 hover:brightness-110 active:scale-100 shadow-lg shadow-red-900/30"
+              style={{ background: '#C8102E', color: '#fff' }}
+            >
+              Book Your First Class
+            </a>
+            <a
+              href="#classes"
+              className="w-full sm:w-auto inline-flex items-center justify-center px-10 py-4 text-sm font-bold tracking-widest uppercase rounded-sm border transition-all duration-200 hover:bg-white/10 hover:border-white"
+              style={{ borderColor: 'rgba(255,255,255,0.3)', color: '#fff' }}
+            >
+              Explore Classes
+            </a>
+          </div>
+          <p className="text-gray-500 text-xs tracking-widest">
+            $30 drop-in &nbsp;·&nbsp; all levels welcome
+          </p>
         </div>
       </div>
 

@@ -73,8 +73,22 @@ export default function Schedule() {
           ))}
         </div>
 
+        {/* First class note */}
+        <div
+          className="mt-10 flex items-start gap-4 p-5 border rounded-sm"
+          style={{ background: '#111', borderColor: '#1e1e1e' }}
+        >
+          <svg className="w-5 h-5 shrink-0 mt-0.5" fill="none" stroke="#C8102E" viewBox="0 0 24 24" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          <p className="text-gray-400 text-sm font-light leading-relaxed">
+            <span className="text-white font-semibold">First class?</span> Wear athletic clothes and bring water.
+            No gear needed — just show up. Drop-ins are $30 with no commitment.
+          </p>
+        </div>
+
         {/* CTA */}
-        <div className="mt-12 text-center">
+        <div className="mt-10 text-center">
           <a
             href="#pricing"
             className="inline-flex items-center gap-2 px-8 py-3 text-sm font-bold tracking-widest uppercase rounded-sm transition-all hover:brightness-110 hover:scale-105"

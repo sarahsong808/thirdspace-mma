@@ -72,7 +72,7 @@ export default function Classes() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 gap-6">
           {disciplines.map(({ id, label, tagline, description, details, color, bg, badge }) => (
             <article
               key={id}

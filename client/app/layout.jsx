@@ -2,17 +2,8 @@ import './globals.css'
 
 export const metadata = {
   metadataBase: new URL('https://thirdspacemma.com'),
-  icons: {
-    icon: [
-      { url: '/images/logo.png', type: 'image/png' },
-    ],
-    apple: [
-      { url: '/images/logo.png', type: 'image/png' },
-    ],
-    shortcut: '/images/logo.png',
-  },
   title: {
-    default: 'Third Space MMA | Muay Thai, Jiu-Jitsu & MMA in North Hollywood, CA',
+    default: 'Third Space MMA | Muay Thai, Jiu-Jitsu & MMA in San Fernando, CA',
     template: '%s | Third Space MMA',
   },
   description:
@@ -23,8 +14,8 @@ export const metadata = {
     'Muay Thai classes SFV',
     'martial arts San Fernando CA',
     'MMA classes near me',
-    'BJJ classes North Hollywood',
-    'Muay Thai North Hollywood',
+    'BJJ classes San Fernando',
+    'Muay Thai San Fernando',
     'Arsalan Mayel coach',
     'Third Space MMA',
     'fight gym San Fernando Valley',
@@ -40,21 +31,21 @@ export const metadata = {
     locale: 'en_US',
     url: 'https://thirdspacemma.com',
     siteName: 'Third Space MMA',
-    title: 'Third Space MMA | North Hollywood\'s Elite Combat Sports Gym',
+    title: 'Third Space MMA | San Fernando\'s Elite Combat Sports Gym',
     description:
-      'Train with pro MMA fighter Arsalan Mayel. Muay Thai, Jiu-Jitsu & MMA in North Hollywood, CA. All levels welcome.',
+      'Train with pro MMA fighter Arsalan Mayel. Muay Thai, Jiu-Jitsu & MMA in San Fernando, CA. All levels welcome.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Third Space MMA — North Hollywood Combat Sports',
+        alt: 'Third Space MMA — San Fernando Combat Sports',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Third Space MMA | North Hollywood',
+    title: 'Third Space MMA | San Fernando',
     description: 'Train with pro MMA fighter Arsalan Mayel. All levels welcome.',
     images: ['/og-image.jpg'],
   },
@@ -78,7 +69,7 @@ export default function RootLayout({ children }) {
     '@type': 'SportsActivityLocation',
     name: 'Third Space MMA',
     description:
-      'Professional MMA gym in North Hollywood, CA offering Muay Thai, Jiu-Jitsu and MMA classes for all skill levels.',
+      'Professional MMA gym in San Fernando, CA offering Muay Thai, Jiu-Jitsu and MMA classes for all skill levels.',
     url: 'https://thirdspacemma.com',
     telephone: '+1-818-471-8867',
     address: {

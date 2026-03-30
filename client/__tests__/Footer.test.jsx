@@ -37,7 +37,7 @@ describe('Footer', () => {
 
   it('renders location text', () => {
     render(<Footer />)
-    const matches = screen.getAllByText(/North Hollywood/i)
+    const matches = screen.getAllByText(/San Fernando/i)
     expect(matches.length).toBeGreaterThanOrEqual(1)
   })
 })

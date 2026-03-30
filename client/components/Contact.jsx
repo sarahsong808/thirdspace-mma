@@ -63,12 +63,11 @@ export default function Contact() {
             id="contact-heading"
             className="heading-display text-[clamp(2.5rem,5vw,5rem)] text-white leading-none mb-6"
           >
-            Your First Class <br />
-            <span style={{ color: '#1A6B3A' }}>Is Free.</span>
+            Ready to Start?
           </h2>
           <p className="text-gray-400 font-light leading-relaxed mb-10 max-w-md">
-            Ready to start? Send us a message and we&apos;ll get you set up for your free trial class.
-            No experience necessary. All levels welcome.
+            Send us a message and we&apos;ll get you set up for your first class.
+            Drop-ins are $30. No experience necessary. All levels welcome.
           </p>
 
           {/* Contact details */}
@@ -124,6 +123,20 @@ export default function Contact() {
               </div>
             </div>
           </address>
+
+          {/* Google Maps */}
+          <div className="mt-10 rounded-sm overflow-hidden border" style={{ borderColor: '#1e1e1e' }}>
+            <iframe
+              title="Third Space MMA location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3299.3!2d-118.4390!3d34.2897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s14675+Rinaldi+St+%23G%2C+San+Fernando%2C+CA+91340!5e0!3m2!1sen!2sus!4v1"
+              width="100%"
+              height="200"
+              style={{ border: 0, display: 'block', filter: 'grayscale(1) invert(0.9) contrast(0.85)' }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
 
           {/* Social */}
           <div className="flex items-center gap-4 mt-10">
@@ -183,12 +196,12 @@ export default function Contact() {
               </div>
               <h3 className="heading-display text-3xl text-white mb-3">Message Sent!</h3>
               <p className="text-gray-400 font-light">
-                We&apos;ll be in touch within 24 hours to set up your free trial class.
+                We&apos;ll be in touch within 24 hours to get you scheduled.
               </p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} noValidate aria-label="Contact form">
-              <h3 className="heading-display text-2xl text-white mb-6">Claim Your Free Class</h3>
+              <h3 className="heading-display text-2xl text-white mb-6">Book Your First Class</h3>
 
               <div className="space-y-4">
                 {/* Name */}
@@ -297,7 +310,7 @@ export default function Contact() {
                   className="w-full py-4 text-sm font-bold tracking-widest uppercase rounded-sm transition-all duration-200 hover:brightness-110 hover:scale-[1.01] active:scale-100 disabled:opacity-60 disabled:cursor-not-allowed"
                   style={{ background: '#C8102E', color: '#fff' }}
                 >
-                  {status === 'loading' ? 'Sending…' : 'Claim My Free Class'}
+                  {status === 'loading' ? 'Sending…' : 'Book My First Class'}
                 </button>
 
                 <p className="text-gray-600 text-xs text-center">

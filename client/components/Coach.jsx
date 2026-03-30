@@ -47,9 +47,9 @@ export default function Coach() {
               />
             </div>
 
-            {/* Floating stat cards */}
+            {/* Floating stat card — hidden on small screens to prevent horizontal overflow */}
             <div
-              className="absolute -bottom-6 -right-6 px-6 py-4 rounded-sm shadow-xl"
+              className="hidden sm:block absolute -bottom-6 -right-6 px-6 py-4 rounded-sm shadow-xl"
               style={{ background: '#C8102E' }}
             >
               <p className="heading-display text-4xl text-white leading-none">14+</p>
