@@ -57,6 +57,10 @@ export const metadata = {
   verification: {
     google: 'YOUR_GOOGLE_SITE_VERIFICATION_CODE',
   },
+  icons: {
+    icon: '/favicon.png',
+    apple: '/favicon.png',
+  },
 }
 
 /**

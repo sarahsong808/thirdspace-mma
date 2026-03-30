@@ -1,6 +1,8 @@
 import { Resend } from 'resend'
 import { NextResponse } from 'next/server'
 
+export const runtime = 'edge'
+
 /**
  * POST /api/contact
  * Accepts lead form submissions and sends an email notification via Resend.
