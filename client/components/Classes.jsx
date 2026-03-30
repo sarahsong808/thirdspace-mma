@@ -10,16 +10,17 @@ export default function Classes() {
       description:
         'Punches, elbows, knees, and kicks — Muay Thai is the most complete striking art in the world. Our classes build technique, timing, and devastating power from the ground up.',
       details: ['Stand-up striking', 'Clinch work', 'Pad holding technique', 'Sparring (levels-based)'],
-      color: '#C8102E',
-      bg: 'rgba(200,16,46,0.08)',
+      color: '#1A6B3A',
+      bg: 'rgba(26,107,58,0.08)',
     },
     {
       id: 'jiu-jitsu',
-      label: 'Jiu-Jitsu (No-Gi)',
+      label: 'Jiu-Jitsu',
       tagline: 'Ground Mastery',
       description:
         'The backbone of MMA grappling. BJJ teaches you to control, submit, and dominate from every position — standing and on the mat.',
       details: ['Takedowns & guard work', 'Position control', 'Submission chains', 'Drilling & live rolling'],
+      badge: 'No-Gi',
       color: '#1A6B3A',
       bg: 'rgba(26,107,58,0.08)',
     },
@@ -41,9 +42,8 @@ export default function Classes() {
       description:
         'Held once a week in a welcoming, women-only environment. Designed to build real self-defense skills, elite fitness, and unshakeable confidence — regardless of prior experience.',
       details: ['Self-defense fundamentals', 'Muay Thai striking basics', 'BJJ & grappling', 'Empowering community'],
-      color: '#C8102E',
-      bg: 'rgba(200,16,46,0.08)',
-      badge: 'Once a Week',
+      color: '#1A6B3A',
+      bg: 'rgba(26,107,58,0.08)',
     },
   ]
 
@@ -102,7 +102,7 @@ export default function Classes() {
                   {badge && (
                     <span
                       className="text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-sm shrink-0 ml-4"
-                      style={{ background: 'rgba(200,16,46,0.15)', color: '#C8102E', border: '1px solid rgba(200,16,46,0.3)' }}
+                      style={{ background: 'rgba(26,107,58,0.15)', color: '#1A6B3A', border: '1px solid rgba(26,107,58,0.3)' }}
                     >
                       {badge}
                     </span>
