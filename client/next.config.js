@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Required for Cloudflare Pages deployment
+  // @ts-ignore
+  ...require('@cloudflare/next-on-pages/next-dev'),
+
   // Allow the NBC News VS Code extension dev origin to access HMR without warnings.
-  // This only affects the local dev server — has no effect in production.
   allowedDevOrigins: ['localhost.nbcnews.com'],
 
   images: {
