@@ -150,7 +150,7 @@ export default function Hero() {
           className="opacity-0 translate-y-6 transition-all duration-700 heading-display text-[clamp(1.6rem,5vw,5rem)] leading-none mb-8"
           style={{ color: 'rgba(255,255,255,0.6)' }}
         >
-          Third Space MMA
+          Train like a fighter
         </h2>
 
         {/* Sub-copy */}
@@ -160,7 +160,7 @@ export default function Hero() {
         >
           Muay Thai · Jiu-Jitsu · MMA
           <br />
-          Coached by pro MMA fighter <strong className="text-white font-semibold">Arsalan Mayel</strong> — 14+ years experience.
+          Train under pro MMA fighter <strong className="text-white font-semibold">Arsalan Mayel</strong> — 14+ years experience.
         </p>
 
         {/* Trust builders */}
@@ -198,7 +198,7 @@ export default function Hero() {
             </a>
           </div>
           <p className="text-gray-500 text-xs tracking-widest">
-            $30 drop-in &nbsp;·&nbsp; all levels welcome
+            $30 first class &nbsp;·&nbsp; all levels welcome
           </p>
         </div>
       </div>
