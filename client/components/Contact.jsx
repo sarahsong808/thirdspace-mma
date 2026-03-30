@@ -165,7 +165,7 @@ export default function Contact() {
               </svg>
             </a>
             <a
-              href="https://g.page/r/third-space-mma"
+              href="https://share.google/hl1NMC5ufpLoFQrKQ"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Third Space MMA on Google"

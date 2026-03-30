@@ -78,7 +78,7 @@ export default function Pricing() {
           >
             Invest In Yourself
           </h2>
-          <p className="text-gray-500 text-sm max-w-lg mx-auto leading-relaxed">
+          <p className="text-gray-500 text-lg max-w-lg mx-auto leading-relaxed">
             Yes, there are cheaper gyms. But cheap gyms mean 30 people on the mat, no one watching
             your form, and no one who knows your name. Here you pay for something different:
             a coach who <strong className="text-gray-300">actually knows you</strong>, classes small
@@ -174,32 +174,6 @@ export default function Pricing() {
         <p className="text-center text-gray-600 text-xs mt-6 tracking-wide">
           Drop-in $30 · Trial week $60 · Monthly $200. Cancel anytime.
         </p>
-
-        {/* Premium value callout */}
-        <div
-          className="mt-10 mx-auto max-w-2xl p-6 rounded-sm border flex flex-col sm:flex-row items-start gap-5"
-          style={{ background: '#111', borderColor: '#1e1e1e' }}
-        >
-          <div
-            className="shrink-0 w-10 h-10 rounded-sm flex items-center justify-center mt-0.5"
-            style={{ background: 'rgba(200,16,46,0.12)' }}
-            aria-hidden="true"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="#C8102E" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-          </div>
-          <div>
-            <p className="text-white text-sm font-semibold mb-1">Why this is worth it</p>
-            <p className="text-gray-500 text-sm font-light leading-relaxed">
-              A crowded gym with 30 people and one distracted instructor will cost you less per month
-              — and give you exactly that in return. At Third Space, Arsalan knows your name, your
-              weaknesses, your goals. He’ll correct your posture mid-round, adjust your game plan
-              between sessions, and push you in the way that actually moves the needle. That level of
-              care doesn’t come from scale. It comes from keeping it small on purpose.
-            </p>
-          </div>
-        </div>
       </div>
     </section>
   )

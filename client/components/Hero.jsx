@@ -204,7 +204,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 opacity-40">
+      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 opacity-40">
         <span className="text-[10px] tracking-[0.3em] uppercase text-gray-400">Scroll</span>
         <div className="w-px h-10 bg-gradient-to-b from-gray-400 to-transparent animate-pulse" />
       </div>
