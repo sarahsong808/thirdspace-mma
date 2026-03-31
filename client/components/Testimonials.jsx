@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import Script from 'next/script'
 
 /**
  * @typedef {{ id: string, name: string, role: string, rating: number, text: string, videoId?: string, platform: 'google'|'yelp'|'instagram' }} Testimonial
@@ -70,57 +70,7 @@ const PLATFORM_COLORS = {
  * Replace with actual YouTube video IDs.
  * @type {string[]}
  */
-const VIDEO_IDS = [
-  'dQw4w9WgXcQ', // placeholder — replace with real YouTube IDs
-  'dQw4w9WgXcQ',
-]
-
-/** @param {{ videoId: string, title: string }} props */
-function VideoCard({ videoId, title }) {
-  const [playing, setPlaying] = useState(false)
-  const thumb = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`
-
-  return (
-    <div className="relative aspect-video rounded-sm overflow-hidden border" style={{ borderColor: '#222' }}>
-      {playing ? (
-        <iframe
-          src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}
-          title={title}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          className="absolute inset-0 w-full h-full"
-        />
-      ) : (
-        <button
-          onClick={() => setPlaying(true)}
-          className="absolute inset-0 w-full h-full group"
-          aria-label={`Play video: ${title}`}
-        >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={thumb}
-            alt={title}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors" />
-          <div
-            className="absolute inset-0 flex items-center justify-center"
-          >
-            <div
-              className="w-16 h-16 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-200"
-              style={{ background: '#C8102E' }}
-            >
-              <svg className="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </div>
-          </div>
-          <p className="absolute bottom-4 left-4 right-4 text-white text-sm font-semibold">{title}</p>
-        </button>
-      )}
-    </div>
-  )
-}
+const INSTAGRAM_REEL = 'https://www.instagram.com/reel/DOeMTZaj8gv/'
 
 /** @param {{ rating: number }} props */
 function Stars({ rating }) {
@@ -184,16 +134,22 @@ export default function Testimonials() {
           </div>
         </div>
 
-        {/* Video testimonials */}
-        <div className="mb-16">
-          <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-gray-600 mb-6">
-            Video Reviews
-          </h3>
-          <div className="grid md:grid-cols-2 gap-6">
-            <VideoCard videoId={VIDEO_IDS[0]} title="Student Review — Muay Thai & MMA Training" />
-            <VideoCard videoId={VIDEO_IDS[1]} title="Women's Class Testimonial — Third Space MMA" />
-          </div>
-          <p className="text-gray-700 text-xs mt-3 text-center">Replace VIDEO_IDS in Testimonials.jsx with your actual YouTube video IDs.</p>
+        {/* Instagram reel — right under heading */}
+        <div className="flex justify-center mb-16">
+          <blockquote
+            className="instagram-media"
+            data-instgrm-permalink={INSTAGRAM_REEL}
+            data-instgrm-version="14"
+            style={{
+              background: '#111',
+              border: '1px solid #222',
+              borderRadius: '4px',
+              maxWidth: '400px',
+              width: '100%',
+              minWidth: '326px',
+            }}
+          />
+          <Script src="https://www.instagram.com/embed.js" strategy="lazyOnload" />
         </div>
 
         {/* Written reviews grid */}

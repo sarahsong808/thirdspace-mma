@@ -3,6 +3,7 @@ import Hero from '@/components/Hero'
 import Mission from '@/components/Mission'
 import Classes from '@/components/Classes'
 import Coach from '@/components/Coach'
+import Gallery from '@/components/Gallery'
 import Schedule from '@/components/Schedule'
 import Pricing from '@/components/Pricing'
 import Testimonials from '@/components/Testimonials'
@@ -23,6 +24,7 @@ export default function HomePage() {
         <Schedule />
         <Pricing />
         <Testimonials />
+        <Gallery />
         <FAQ />
         <Contact />
       </main>
