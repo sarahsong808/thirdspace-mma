@@ -188,7 +188,7 @@ export default function Testimonials() {
         {/* Review links */}
         <div className="flex flex-wrap items-center justify-center gap-4 mt-12">
           <a
-            href="https://g.page/r/third-space-mma"
+            href="https://share.google/FPege2Cdmi9GagwsS"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-bold tracking-widest uppercase border rounded-sm hover:bg-white/5 transition-colors"
