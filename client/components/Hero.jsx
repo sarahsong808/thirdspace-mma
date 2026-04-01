@@ -52,7 +52,7 @@ export default function Hero() {
     <section
       ref={sectionRef}
       id="hero"
-      aria-label="Third Space MMA — Elite combat sports gym in San Fernando"
+      aria-label="Third Space MMA — Muay Thai, Jiu-Jitsu & MMA gym in San Fernando Valley"
       className="relative flex items-center justify-center min-h-screen overflow-hidden"
       style={{ cursor: cursor.visible ? 'none' : 'auto' }}
     >
@@ -158,7 +158,7 @@ export default function Hero() {
           data-animate
           className="opacity-0 translate-y-6 transition-all duration-700 text-base md:text-lg text-gray-300 font-light max-w-2xl mx-auto mb-4 leading-relaxed"
         >
-          Muay Thai · Jiu-Jitsu · MMA
+          Muay Thai · Jiu-Jitsu · MMA in San Fernando Valley
         </p>
 
         {/* Trust builders */}
