@@ -32,6 +32,10 @@ const FAQS = [
     q: 'Can I try before committing to a membership?',
     a: 'Yes. Drop-in classes are $30 with no commitment. There is also a trial week for $60 that gives you unlimited access for 7 days with no pressure and no contract.',
   },
+  {
+    q: 'Where are you located? Do you serve Granada Hills, Northridge, or Sylmar?',
+    a: 'We are located at 14675 Rinaldi St #G, San Fernando, CA 91340 — just minutes from Granada Hills, Northridge, Sylmar, Mission Hills, and Chatsworth. If you are anywhere in the San Fernando Valley, we are your gym.',
+  },
 ]
 
 /**

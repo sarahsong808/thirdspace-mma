@@ -24,7 +24,7 @@ export default function FloatingCTA() {
   return (
     <div className="fixed bottom-6 right-4 z-50 lg:hidden">
       <a
-        href="#contact"
+        href="#book-form"
         className="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-bold tracking-widest uppercase rounded-sm shadow-lg shadow-black/50 transition-all hover:brightness-110 active:scale-95"
         style={{ background: '#C8102E', color: '#fff' }}
         aria-label="Book your first class"

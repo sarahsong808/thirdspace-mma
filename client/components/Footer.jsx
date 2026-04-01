@@ -60,8 +60,9 @@ export default function Footer() {
             <p className="text-gray-600 text-sm font-light leading-relaxed mb-4">
               San Fernando Valley’s premier combat sports gym. Jiu-Jitsu &amp; Muay Thai — all levels welcome.
             </p>
-            <p className="text-gray-700 text-xs">14675 Rinaldi St #G · San Fernando, CA 91340</p>
-          </div>
+            <p className="text-gray-700 text-xs">14675 Rinaldi St #G · San Fernando, CA 91340</p>            <p className="text-gray-700 text-xs mt-2">
+              Serving Granada Hills · Northridge · Sylmar · Mission Hills · Chatsworth
+            </p>          </div>
 
           {/* Link columns */}
           {Object.entries(links).map(([heading, items]) => (

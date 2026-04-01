@@ -89,6 +89,7 @@ export default function Contact() {
                 <p className="text-white text-sm font-semibold">Location</p>
                 <p className="text-gray-500 text-sm">14675 Rinaldi St #G</p>
                 <p className="text-gray-500 text-sm">San Fernando, CA 91340</p>
+                <p className="text-gray-600 text-xs mt-1">Serving Granada Hills · Northridge · Sylmar · SFV</p>
               </div>
             </div>
 
@@ -200,7 +201,7 @@ export default function Contact() {
               </p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} noValidate aria-label="Contact form">
+            <form id="book-form" onSubmit={handleSubmit} noValidate aria-label="Contact form">
               <h3 className="heading-display text-2xl text-white mb-6">Book Your First Class</h3>
 
               <div className="space-y-4">
