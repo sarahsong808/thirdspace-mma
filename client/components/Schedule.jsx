@@ -8,7 +8,9 @@ const SCHEDULE = [
   { day: 'Tuesday',   time: '7:30 PM', class: 'Muay Thai',                  instructor: 'Arsalan Mayel', level: 'All Levels' },
   { day: 'Wednesday', time: '7:30 PM', class: 'Jiu-Jitsu (No-Gi)',        instructor: 'Arsalan Mayel', level: 'All Levels' },
   { day: 'Thursday',  time: '7:30 PM', class: 'Muay Thai',                  instructor: 'Arsalan Mayel', level: 'All Levels' },
-  { day: 'Sunday',    time: '1:00 PM', class: 'MMA', instructor: 'Arsalan Mayel', level: 'All Levels' },
+  { day: 'Sunday',    time: '12:00 PM', class: "Women's Free Self Defense",  instructor: 'Arsalan Mayel', level: 'All Levels' },
+  { day: 'Sunday',    time: '1:00 PM',  class: 'MMA',                          instructor: 'Arsalan Mayel', level: 'All Levels' },
+  { day: 'Sunday',    time: '2:00 PM',  class: 'Open Mat Sparring',            instructor: 'Arsalan Mayel', level: 'All Levels' },
 ]
 
 /**
