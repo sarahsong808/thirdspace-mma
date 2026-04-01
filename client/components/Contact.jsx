@@ -45,7 +45,7 @@ export default function Contact() {
     <section
       id="contact"
       aria-labelledby="contact-heading"
-      className="relative py-28 section-padding"
+      className="relative py-16 sm:py-28 section-padding"
       style={{ background: '#0e0e0e' }}
     >
       <div
@@ -54,8 +54,11 @@ export default function Contact() {
       />
 
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-start">
-        {/* Info */}
-        <div>
+        {/* Form — first on mobile for conversion */}
+        <div
+          className="order-1 lg:order-2 p-6 sm:p-8 rounded-sm border"
+          style={{ background: '#111', borderColor: '#1e1e1e' }}
+        >
           <p className="text-xs font-bold tracking-[0.4em] uppercase mb-4" style={{ color: '#C8102E' }}>
             Get In Touch
           </p>
@@ -179,11 +182,8 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* Form */}
-        <div
-          className="p-8 rounded-sm border"
-          style={{ background: '#111', borderColor: '#1e1e1e' }}
-        >
+        {/* Info — below form on mobile */}
+        <div className="order-2 lg:order-1">
           {status === 'success' ? (
             <div className="text-center py-12">
               <div

@@ -13,7 +13,7 @@ export default function Coach() {
     <section
       id="coach"
       aria-labelledby="coach-heading"
-      className="relative py-28 section-padding overflow-hidden"
+      className="relative py-16 sm:py-28 section-padding overflow-hidden"
       style={{ background: '#0e0e0e' }}
     >
       <div

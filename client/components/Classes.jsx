@@ -51,7 +51,7 @@ export default function Classes() {
     <section
       id="classes"
       aria-labelledby="classes-heading"
-      className="relative py-28 section-padding"
+      className="relative py-16 sm:py-28 section-padding"
       style={{ background: '#0a0a0a' }}
     >
       <div

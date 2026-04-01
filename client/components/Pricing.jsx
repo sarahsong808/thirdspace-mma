@@ -59,7 +59,7 @@ export default function Pricing() {
     <section
       id="pricing"
       aria-labelledby="pricing-heading"
-      className="relative py-28 section-padding"
+      className="relative py-16 sm:py-28 section-padding"
       style={{ background: '#0e0e0e' }}
     >
       <div
@@ -105,7 +105,7 @@ export default function Pricing() {
                 <div className="h-1 w-full" style={{ background: '#C8102E' }} />
               )}
 
-              <div className="p-8 flex flex-col flex-1">
+              <div className="p-5 sm:p-8 flex flex-col flex-1">
                 {/* Header */}
                 <div className="mb-6">
                   {badge && (
@@ -119,7 +119,7 @@ export default function Pricing() {
                   <h3 className="heading-display text-3xl text-white mb-1">{name}</h3>
                   <div className="flex items-baseline gap-2 mt-3 mb-2">
                     <span
-                      className="heading-display text-5xl"
+                      className="heading-display text-4xl sm:text-5xl"
                       style={{ color: featured ? '#C8102E' : '#fff' }}
                     >
                       {price}

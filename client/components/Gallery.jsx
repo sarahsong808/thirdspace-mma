@@ -23,11 +23,24 @@ const photos = [
  */
 export default function Gallery() {
   const [activeIndex, setActiveIndex] = useState(null)
+  const [scrollIndex, setScrollIndex] = useState(0)
   const trackRef = useRef(null)
 
-  const close  = useCallback(() => setActiveIndex(null), [])
-  const prev   = useCallback(() => setActiveIndex(i => (i - 1 + photos.length) % photos.length), [])
-  const next   = useCallback(() => setActiveIndex(i => (i + 1) % photos.length), [])
+  const CARD_WIDTH = 252 // w-60 (240px) + gap (12px)
+  const VISIBLE    = typeof window !== 'undefined' ? Math.floor(window.innerWidth / CARD_WIDTH) : 4
+  const maxIndex   = Math.max(0, photos.length - 1)
+
+  const scrollTo = useCallback((idx) => {
+    const bounded = ((idx % photos.length) + photos.length) % photos.length
+    setScrollIndex(bounded)
+    trackRef.current?.scrollTo({ left: bounded * CARD_WIDTH, behavior: 'smooth' })
+  }, [CARD_WIDTH])
+
+  const scrollTrack = (dir) => scrollTo(scrollIndex + dir)
+
+  const close = useCallback(() => setActiveIndex(null), [])
+  const prev  = useCallback(() => setActiveIndex(i => (i - 1 + photos.length) % photos.length), [])
+  const next  = useCallback(() => setActiveIndex(i => (i + 1) % photos.length), [])
 
   useEffect(() => {
     if (activeIndex === null) return
@@ -44,10 +57,6 @@ export default function Gallery() {
     document.body.style.overflow = activeIndex !== null ? 'hidden' : ''
     return () => { document.body.style.overflow = '' }
   }, [activeIndex])
-
-  const scrollTrack = (dir) => {
-    trackRef.current?.scrollBy({ left: dir * 300, behavior: 'smooth' })
-  }
 
   return (
     <section

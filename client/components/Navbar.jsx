@@ -54,14 +54,14 @@ export default function Navbar() {
             alt="Third Space MMA"
             width={56}
             height={56}
-            className="w-[5.5rem] h-[5.5rem] object-contain"
+            className="w-12 h-12 sm:w-[5.5rem] sm:h-[5.5rem] object-contain"
             priority
             onError={(e) => { e.target.style.display = 'none' }}
           />
           {/* Text fallback — shows next to logo or alone if image missing */}
-          <span className="-ml-2 flex flex-col leading-none">
+          <span className="-ml-1 sm:-ml-2 flex flex-col leading-none">
             <span
-              className="text-2xl font-black tracking-widest uppercase"
+              className="text-lg sm:text-2xl font-black tracking-widest uppercase"
               style={{ fontFamily: 'var(--font-bebas, Impact)', color: '#ffffff' }}
             >
               Third Space
