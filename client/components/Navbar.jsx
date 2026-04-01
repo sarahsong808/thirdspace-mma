@@ -35,7 +35,7 @@ export default function Navbar() {
     <header
       role="banner"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-black/95 backdrop-blur-md shadow-lg shadow-black/40' : 'bg-transparent'
+        scrolled || menuOpen ? 'bg-black/95 backdrop-blur-md shadow-lg shadow-black/40' : 'bg-transparent'
       }`}
     >
       <nav
