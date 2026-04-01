@@ -33,14 +33,14 @@ export default function Footer() {
       style={{ background: '#060606', borderTop: '1px solid #161616' }}
     >
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-16">
-          {/* Brand */}
+        <div className="flex flex-col gap-10 md:grid md:grid-cols-4 md:gap-12 mb-16">
+          {/* Brand — full width on mobile */}
           <div>
             <div className="mb-4 flex items-center gap-0">
               <img
                 src="/images/logo.png"
                 alt="Third Space MMA"
-                className="w-20 h-20 object-contain"
+                className="w-16 h-16 md:w-20 md:h-20 object-contain"
               />
               <div>
                 <p
@@ -57,17 +57,20 @@ export default function Footer() {
                 </p>
               </div>
             </div>
-            <p className="text-gray-600 text-sm font-light leading-relaxed mb-4">
-              San Fernando Valley’s premier combat sports gym. Jiu-Jitsu &amp; Muay Thai — all levels welcome.
+            <p className="text-gray-600 text-sm font-light leading-relaxed mb-3 max-w-xs">
+              San Fernando Valley's premier combat sports gym. Jiu-Jitsu &amp; Muay Thai — all levels welcome.
             </p>
-            <p className="text-gray-700 text-xs">14675 Rinaldi St #G · San Fernando, CA 91340</p>            <p className="text-gray-700 text-xs mt-2">
-              Serving Granada Hills · Northridge · Sylmar · Mission Hills · Chatsworth
-            </p>          </div>
+            <p className="text-gray-700 text-xs">14675 Rinaldi St #G · San Fernando, CA 91340</p>
+            <p className="text-gray-700 text-xs mt-1">
+              Serving Granada Hills · Northridge · Sylmar · Van Nuys · North Hollywood &amp; more
+            </p>
+          </div>
 
-          {/* Link columns */}
+          {/* Link columns — 3-col row on mobile, individual grid cells on md+ */}
+          <div className="grid grid-cols-3 gap-4 md:contents">
           {Object.entries(links).map(([heading, items]) => (
             <div key={heading}>
-              <h3 className="text-xs font-bold tracking-[0.35em] uppercase text-gray-500 mb-5">
+              <h3 className="text-xs font-bold tracking-[0.35em] uppercase text-gray-500 mb-4">
                 {heading}
               </h3>
               <ul className="space-y-3" role="list">
@@ -85,6 +88,7 @@ export default function Footer() {
               </ul>
             </div>
           ))}
+          </div>
         </div>
 
         {/* Divider */}
