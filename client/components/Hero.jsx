@@ -127,10 +127,10 @@ export default function Hero() {
         ref={taglineRef}
         className="relative z-10 text-center px-6 max-w-5xl mx-auto"
       >
-        {/* Eyebrow */}
+        {/* Eyebrow — hidden on mobile */}
         <p
           data-animate
-          className="opacity-0 translate-y-6 transition-all duration-700 inline-block mb-6 text-xs font-bold tracking-[0.4em] uppercase px-4 py-1.5 border rounded-sm"
+          className="opacity-0 translate-y-6 transition-all duration-700 hidden sm:inline-block mb-6 text-xs font-bold tracking-[0.4em] uppercase px-4 py-1.5 border rounded-sm"
           style={{ color: '#C8102E', borderColor: 'rgba(200,16,46,0.5)' }}
         >
           San Fernando, CA · San Fernando Valley
@@ -139,7 +139,7 @@ export default function Hero() {
         {/* Main headline */}
         <h1
           data-animate
-          className="opacity-0 translate-y-6 transition-all duration-700 heading-display text-[clamp(2.4rem,10vw,9rem)] text-white leading-none mb-4"
+          className="opacity-0 translate-y-6 transition-all duration-700 heading-display text-[clamp(2.8rem,10vw,9rem)] text-white leading-none mb-4"
         >
           Where You Become{' '}
           <span style={{ color: '#C8102E' }}>Your Best Self.</span>
@@ -203,8 +203,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 opacity-40">
+      {/* Scroll indicator — hidden on mobile to avoid overlap */}
+      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 hidden sm:flex flex-col items-center gap-2 opacity-40">
         <span className="text-[10px] tracking-[0.3em] uppercase text-gray-400">Scroll</span>
         <div className="w-px h-10 bg-gradient-to-b from-gray-400 to-transparent animate-pulse" />
       </div>
