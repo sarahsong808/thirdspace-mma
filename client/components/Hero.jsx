@@ -159,8 +159,6 @@ export default function Hero() {
           className="opacity-0 translate-y-6 transition-all duration-700 text-base md:text-lg text-gray-300 font-light max-w-2xl mx-auto mb-4 leading-relaxed"
         >
           Muay Thai · Jiu-Jitsu · MMA
-          <br />
-          Train under pro MMA fighter <strong className="text-white font-semibold">Arsalan Mayel</strong> — 14+ years experience.
         </p>
 
         {/* Trust builders */}

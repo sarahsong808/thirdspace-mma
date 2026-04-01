@@ -11,7 +11,7 @@ export default function Pricing() {
       description: 'Try any single class with no commitment. Perfect for first-timers and curious beginners.',
       features: [
         'One class of your choice',
-        'Jiu-Jitsu or Muay Thai',
+        'Jiu-Jitsu, Muay Thai, or MMA',
         'No registration required',
         'All levels welcome',
       ],
@@ -27,7 +27,7 @@ export default function Pricing() {
       description: 'A full week of unlimited classes to experience everything Third Space has to offer.',
       features: [
         'Unlimited classes for 7 days',
-        'Jiu-Jitsu & Muay Thai',
+        'Jiu-Jitsu, Muay Thai & MMA',
         'Sunday open mat included',
         'No contract, no pressure',
       ],
@@ -44,7 +44,7 @@ export default function Pricing() {
       description: 'Full unlimited access to every class all month long. Train as often as you want.',
       features: [
         'Unlimited classes all month',
-        'Jiu-Jitsu, Muay Thai & open mat',
+        'Jiu-Jitsu, Muay Thai & MMA',
         'Priority scheduling',
         'Community & fighter network',
         'Cancel anytime',

@@ -45,6 +45,36 @@ export default function Classes() {
       color: '#1A6B3A',
       bg: 'rgba(26,107,58,0.08)',
     },
+    {
+      id: 'boxing',
+      label: 'Boxing',
+      tagline: 'The Sweet Science',
+      description:
+        'Master the fundamentals of punching — footwork, head movement, and combination striking. Our boxing program sharpens your hands and builds the ring IQ to out-think any opponent.',
+      details: ['Stance & footwork', 'Punch mechanics & combos', 'Head movement & defense', 'Bag work & sparring'],
+      color: '#1A6B3A',
+      bg: 'rgba(26,107,58,0.08)',
+    },
+    {
+      id: 'wrestling',
+      label: 'Wrestling',
+      tagline: 'Dominate the Cage',
+      description:
+        'Control where the fight happens. Wrestling is the engine of MMA — our classes teach you to take opponents down at will, defend takedowns, and grind out dominant positions.',
+      details: ['Single & double leg takedowns', 'Sprawl & takedown defense', 'Cage/clinch wrestling', 'Top pressure & control'],
+      color: '#1A6B3A',
+      bg: 'rgba(26,107,58,0.08)',
+    },
+    {
+      id: 'kickboxing',
+      label: 'Kickboxing',
+      tagline: 'Strikes from Every Angle',
+      description:
+        'Combining punches and kicks into fluid, powerful combinations. Our kickboxing classes develop well-rounded striking, sharp reflexes, and explosive athleticism for fighters at every level.',
+      details: ['Punch & kick combinations', 'Range management', 'Defensive countering', 'Pad work & sparring'],
+      color: '#1A6B3A',
+      bg: 'rgba(26,107,58,0.08)',
+    },
   ]
 
   return (
