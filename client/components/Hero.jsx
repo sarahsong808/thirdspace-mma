@@ -167,7 +167,7 @@ export default function Hero() {
           className="opacity-0 translate-y-6 transition-all duration-700 flex flex-wrap items-center justify-center gap-3 mb-8"
         >
           <span className="flex items-center gap-1.5 text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-sm" style={{ background: 'rgba(200,16,46,0.12)', color: '#C8102E', border: '1px solid rgba(200,16,46,0.25)' }}>
-            🔥 Small groups — max 10 students
+            🔥 Small groups — max 20 students
           </span>
           <span className="flex items-center gap-1.5 text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-sm" style={{ background: 'rgba(255,255,255,0.05)', color: '#aaa', border: '1px solid rgba(255,255,255,0.1)' }}>
             ⚠️ Limited spots per class

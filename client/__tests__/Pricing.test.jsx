@@ -9,19 +9,19 @@ describe('Pricing', () => {
 
   it('renders all three plans', () => {
     render(<Pricing />)
-    expect(screen.getByRole('article', { name: /drop-in plan/i })).toBeInTheDocument()
-    expect(screen.getByRole('article', { name: /unlimited plan/i })).toBeInTheDocument()
-    expect(screen.getByRole('article', { name: /fighter program plan/i })).toBeInTheDocument()
+    expect(screen.getByRole('article', { name: /one program plan/i })).toBeInTheDocument()
+    expect(screen.getByRole('article', { name: /two programs plan/i })).toBeInTheDocument()
+    expect(screen.getByRole('article', { name: /three programs plan/i })).toBeInTheDocument()
   })
 
   it('shows prices', () => {
     render(<Pricing />)
-    expect(screen.getByText('$30')).toBeInTheDocument()
     expect(screen.getByText('$199')).toBeInTheDocument()
-    expect(screen.getByText('Custom')).toBeInTheDocument()
+    expect(screen.getByText('$239')).toBeInTheDocument()
+    expect(screen.getByText('$259')).toBeInTheDocument()
   })
 
-  it('marks the Unlimited plan as most popular', () => {
+  it('marks the two programs plan as most popular', () => {
     render(<Pricing />)
     expect(screen.getByText('Most Popular')).toBeInTheDocument()
   })
@@ -32,8 +32,8 @@ describe('Pricing', () => {
     expect(ctas.length).toBeGreaterThanOrEqual(3)
   })
 
-  it('shows "first class free" message', () => {
+  it('shows open mat included membership note', () => {
     render(<Pricing />)
-    expect(screen.getByText(/first class free/i)).toBeInTheDocument()
+    expect(screen.getAllByText(/open mat included/i).length).toBeGreaterThanOrEqual(1)
   })
 })

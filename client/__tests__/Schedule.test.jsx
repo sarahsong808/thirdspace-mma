@@ -1,36 +1,30 @@
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import Schedule from '@/components/Schedule'
 
 describe('Schedule', () => {
   it('renders the section heading', () => {
     render(<Schedule />)
-    expect(screen.getByRole('heading', { name: /Train Every Day/i })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: /Train with High Quality Instruction, Every Time/i })).toBeInTheDocument()
   })
 
-  it('renders all 7 day tabs', () => {
+  it('renders all weekday labels', () => {
     render(<Schedule />)
-    const tabs = screen.getAllByRole('tab')
-    expect(tabs).toHaveLength(7)
+    expect(screen.getAllByText('Monday').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('Tuesday').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('Wednesday').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('Thursday').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('Friday').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('Saturday').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('Sunday').length).toBeGreaterThanOrEqual(1)
   })
 
-  it('Monday tab is selected by default', () => {
+  it('renders updated time ranges and classes from the posted schedule', () => {
     render(<Schedule />)
-    const monday = screen.getByRole('tab', { name: /Mon/i })
-    expect(monday).toHaveAttribute('aria-selected', 'true')
-  })
-
-  it('switches day panel when a tab is clicked', () => {
-    render(<Schedule />)
-    const friday = screen.getByRole('tab', { name: /Fri/i })
-    fireEvent.click(friday)
-    expect(friday).toHaveAttribute('aria-selected', 'true')
-  })
-
-  it("shows Women's class on Wednesday", () => {
-    render(<Schedule />)
-    const wednesday = screen.getByRole('tab', { name: /Wed/i })
-    fireEvent.click(wednesday)
-    expect(screen.getByText("Women's Martial Arts")).toBeInTheDocument()
+    expect(screen.getAllByText('7:30 PM - 9:00 PM').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getByText('9:00 AM - 10:00 AM')).toBeInTheDocument()
+    expect(screen.getByText("Women's Muay Thai")).toBeInTheDocument()
+    expect(screen.getByText('Wrestling')).toBeInTheDocument()
+    expect(screen.getAllByText('Open Mat').length).toBeGreaterThanOrEqual(2)
   })
 
   it('renders a CTA link', () => {

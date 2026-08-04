@@ -4,52 +4,51 @@
 export default function Pricing() {
   const plans = [
     {
-      id: 'drop-in',
-      name: 'Drop-In',
-      price: '$30',
-      per: 'per class',
-      description: 'Try any single class with no commitment. Perfect for first-timers and curious beginners.',
+      id: 'one-program',
+      name: 'One Program',
+      price: '$199',
+      per: 'per month',
+      description: 'Choose one core program and train consistently with focused coaching and small class sizes.',
       features: [
-        'One class of your choice',
-        'Jiu-Jitsu, Muay Thai, or MMA',
-        'No registration required',
-        'All levels welcome',
+        'Choose one: MMA, Muay Thai, or Jiu Jitsu',
+        'Open mat included',
+        'No contracts',
+        'No sign up fee',
       ],
-      cta: 'Book a Class',
+      cta: 'Choose One Program',
       href: '#contact',
       featured: false,
     },
     {
-      id: 'trial',
-      name: 'Week Trial',
-      price: '$60',
-      per: 'one week',
-      description: 'A full week of unlimited classes to experience everything Third Space has to offer.',
+      id: 'two-programs',
+      name: 'Two Programs',
+      price: '$239',
+      per: 'per month',
+      description: 'Pick any two programs so you can cross-train and level up faster across striking and grappling.',
       features: [
-        'Unlimited classes for 7 days',
-        'Jiu-Jitsu, Muay Thai & MMA',
-        'Sunday open mat included',
-        'No contract, no pressure',
+        'Choose any two: MMA, Muay Thai, Jiu Jitsu',
+        'Open mat included',
+        'No contracts',
+        'No sign up fee',
       ],
-      cta: 'Start My Trial Week',
+      cta: 'Choose Two Programs',
       href: '#contact',
       featured: true,
-      badge: 'Best Value',
+      badge: 'Most Popular',
     },
     {
-      id: 'monthly',
-      name: 'Monthly',
-      price: '$200',
+      id: 'three-programs',
+      name: 'Three Programs',
+      price: '$259',
       per: 'per month',
-      description: 'Full unlimited access to every class all month long. Train as often as you want.',
+      description: 'Get complete access to all three programs for the most complete training path available.',
       features: [
-        'Unlimited classes all month',
-        'Jiu-Jitsu, Muay Thai & MMA',
-        'Priority scheduling',
-        'Community & fighter network',
-        'Cancel anytime',
+        'MMA + Muay Thai + Jiu Jitsu',
+        'Open mat included',
+        'No contracts',
+        'No sign up fee',
       ],
-      cta: 'Join Monthly',
+      cta: 'Choose Three Programs',
       href: '#contact',
       featured: false,
     },
@@ -170,9 +169,9 @@ export default function Pricing() {
           ))}
         </div>
 
-        {/* Free trial note */}
+        {/* Membership note */}
         <p className="text-center text-gray-600 text-xs mt-6 tracking-wide">
-          Drop-in $30 · Trial week $60 · Monthly $200. Cancel anytime.
+          $199 one program · $239 two programs · $259 three programs. Open mat included.
         </p>
       </div>
     </section>

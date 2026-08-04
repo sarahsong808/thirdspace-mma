@@ -75,19 +75,15 @@ export default function Coach() {
 
             <div className="space-y-4 text-gray-400 font-light leading-relaxed text-[15px] mb-10">
               <p>
-                Arsalan Mayel is the head coach and founder of Third Space MMA, bringing over 14 years of experience across Boxing, Muay Thai, Jiu-Jitsu, Wrestling and Mixed Martial Arts.
-              </p>
-              <p>
-                A professional fighter and brown belt in Jiu-Jitsu. Arsalan has competed in over 100 matches across striking and grappling martial arts, such as Boxing, Muay Thai, Jiu Jitsu, and MMA.  His journey has taken him across the world, training and fighting in Thailand, Europe, and the United States, developing a well-rounded, high-level understanding of combat sports.
-              </p>
-              <p>
-                Beyond his experience, Arsalan is known for his ability to connect with people. His coaching style is personable, attentive, and detail-oriented, creating an environment where students feel supported while still being pushed to grow.
-              </p>
-              <p>
-                He takes pride in working with complete beginners just as much as experienced athletes, breaking down complex techniques into simple, clear steps that anyone can understand and apply. Whether someone is stepping on the mats for the first time or preparing for competition, his goal is to meet them where they are and help them level up.
-              </p>
-              <p>
-                As a coach, he has cornered and developed fighters across multiple disciplines, helping students build not only technical skill, but also confidence, discipline, and mental toughness.
+                Arsalan Mayel is the Head Coach and Founder of Third Space MMA, bringing over 14 years of experience in Boxing, Muay Thai, Brazilian Jiu-Jitsu, Wrestling, and Mixed Martial Arts.
+
+                A professional Muay Thai fighter and Brazilian Jiu-Jitsu brown belt, Arsalan has competed in more than 100 matches across striking and grappling disciplines, including Boxing, Muay Thai, Brazilian Jiu-Jitsu, and MMA. His martial arts journey has taken him around the world, training and competing in Thailand, Europe, and the United States, giving him a well-rounded perspective and a modern approach to coaching.
+
+                As both a competitor and coach, Arsalan believes that great instruction goes beyond teaching techniques. He is known for his personable, detail-oriented coaching style and his ability to connect with every student, creating an environment that is welcoming, challenging, and focused on long-term growth.
+
+                Whether working with someone stepping onto the mats for the very first time or preparing an experienced athlete for competition, Arsalan excels at breaking down complex techniques into simple, practical concepts that students can immediately understand and apply. His goal is to help every member build confidence, discipline, technical skill, and resilience both inside and outside the gym.
+
+                Over the years, he has coached and cornered athletes across multiple combat sports, helping students develop not only as martial artists but as more confident, capable individuals. His mission at Third Space MMA is to provide world-class coaching in a supportive community where every student receives the attention they need to reach their full potential.
               </p>
             </div>
 
