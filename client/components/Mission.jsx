@@ -22,9 +22,9 @@ export default function Mission() {
 
   const differentiators = [
     {
-      stat: '≤ 10',
+      stat: '≤ 20',
       label: 'Students Per Class',
-      detail: 'Unlike overcrowded gyms where you vanish in a room of 20–30 people, every class is capped at 10 — ensuring individual attention, precise technical coaching, and real relationships between coach and student.',
+      detail: 'Unlike overcrowded gyms where you vanish in a room of 20+ people, every class is capped at 20 — ensuring individual attention, precise technical coaching, and real relationships between coach and student.',
     },
     {
       stat: '1:1',
