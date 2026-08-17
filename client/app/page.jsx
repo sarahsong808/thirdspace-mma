@@ -19,11 +19,11 @@ export default function HomePage() {
       <Navbar />
       <main id="main-content">
         <Hero />
+        <Schedule />
+        <Pricing />
         <Mission />
         <Classes />
         <Coach />
-        <Schedule />
-        <Pricing />
         <Testimonials />
         <Gallery />
         <FAQ />
