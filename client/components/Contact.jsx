@@ -69,7 +69,7 @@ export default function Contact() {
             Ready to Start?
           </h2>
           <p className="text-gray-400 font-light leading-relaxed mb-10 max-w-md">
-            Send us a message and we&apos;ll get you set up for your first class.
+            Send us a message and we&apos;ll get you set up for your first free class.
             Drop-ins are $30. A week trial is $60. No experience necessary. All levels welcome.
           </p>
 
