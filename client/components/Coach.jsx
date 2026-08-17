@@ -28,7 +28,7 @@ export default function Coach() {
     {
       name: 'Alex Pyle',
       role: 'Coach',
-      image: '/images/coach-alex-pyle.jpg',
+      image: '/images/alexpyle.jpg',
       imageAlt: 'Coach Alex Pyle with a fighter stance in front of an MMA cage',
       paragraphs: [
         'Alex Pyle brings over 10 years of experience in Muay Thai, Brazilian Jiu-Jitsu, Wrestling, and Mixed Martial Arts. Originally from Ames, Iowa, his martial arts journey has taken him around the world in pursuit of high-level training and competition.',
@@ -74,10 +74,6 @@ export default function Coach() {
                   src={coach.image}
                   alt={coach.imageAlt}
                   className="absolute inset-0 w-full h-full object-cover object-top"
-                  onError={(event) => {
-                    event.currentTarget.onerror = null
-                    event.currentTarget.src = '/images/coach-arsalan.jpg'
-                  }}
                 />
                 <div
                   className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none"
