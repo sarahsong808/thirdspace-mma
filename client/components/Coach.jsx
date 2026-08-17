@@ -4,7 +4,7 @@ export default function Coach() {
       name: 'Arsalan Mayel',
       role: 'Head Coach',
       image: '/images/coach-arsalan.jpg',
-      imageAlt: 'Coach Arsalan Mayel - professional MMA fighter and champion',
+      imageAlt: 'Coach Arsalan Mayel - MMA fighter and champion',
       bullets: [
         '14+ Years of Martial Arts Experience - Training since 2012',
         '100+ Competitions across striking and grappling',
@@ -14,8 +14,6 @@ export default function Coach() {
         'Brazilian Jiu-Jitsu Brown Belt',
         '10+ Years of Coaching Experience',
         'International Training & Competition Experience - Thailand, Europe & USA',
-        'Coaches Beginners to Competitive Athletes',
-        'Technical, Detail-Oriented & Personable Coaching Style',
       ],
       stats: [
         { value: '14+', label: 'Years Experience' },
@@ -23,7 +21,10 @@ export default function Coach() {
         { value: '3', label: 'Disciplines' },
         { value: '∞', label: 'Levels Coached' },
       ],
-      tags: ['Muay Thai', 'Jiu-Jitsu', 'MMA Strategy', 'Fight Preparation', 'All Levels'],
+      instagram: 'https://www.instagram.com/afghantornado',
+      instagramHandle: '@afghantornado',
+      email: 'afghantornado@gmail.com',
+      tags: ['Muay Thai', 'Jiu-Jitsu', 'MMA Strategy', 'Fight Preparation', 'Speaks Farsi', 'All Levels'],
     },
     {
       name: 'Alex Pyle',
@@ -40,7 +41,27 @@ export default function Coach() {
         { value: 'MMA', label: 'Champion' },
         { value: '4', label: 'Core Disciplines' },
       ],
-      tags: ['Muay Thai', 'Brazilian Jiu-Jitsu', 'Wrestling', 'MMA Coaching', 'All Levels'],
+      instagram: 'https://www.instagram.com/handsomeman_muaythai',
+      instagramHandle: '@handsomeman_muaythai',
+      email: 'alexpylemma@gmail.com',
+      tags: ['Muay Thai', 'Jiu-Jitsu', 'Wrestling', 'MMA', 'MMA Coaching', 'All Levels'],
+    },
+    {
+      name: 'Amin Tanasevskii',
+      role: 'Coach',
+      image: '/images/amin.jpg',
+      imageAlt: 'Coach Amin Tanasevskii',
+      paragraphs: [
+        'With over 10 years of coaching experience, Amin has developed athletes across boxing, kickboxing, MMA, pankration, and combat sambo. He has worked with students of all skill levels, from complete beginners taking their first class to amateur and competitive fighters preparing for competition.',
+        'Amin is a multiple-time champion in Russia, bringing extensive high-level competitive experience to every class. He is also a black belt in Taekwondo and an expert in Soviet-style boxing and Soviet-style wrestling.',
+      ],
+      stats: [
+        { value: '10+', label: 'Years Experience' },
+        { value: 'Russian', label: 'Champion' },
+        { value: '3', label: 'Disciplines' },
+        { value: '∞', label: 'Levels Coached' },
+      ],
+      tags: ['Combat Sambo', 'Kickboxing', 'Soviet Style Boxing', 'Soviet Style Wrestling', 'Pankration', 'Speaks Russian', 'All Levels'],
     },
   ]
 
@@ -142,6 +163,40 @@ export default function Coach() {
                   </span>
                 ))}
               </div>
+
+              {(coach.instagram || coach.email) && (
+                <div className="mt-6 flex items-center gap-3">
+                  {coach.instagram && (
+                    <a
+                      href={coach.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${coach.name} Instagram profile`}
+                      title={coach.instagramHandle || `${coach.name} on Instagram`}
+                      className="inline-flex items-center justify-center w-10 h-10 rounded-sm border transition-colors"
+                      style={{ borderColor: '#2a2a2a', color: '#C8102E', background: '#141414' }}
+                    >
+                      <svg viewBox="0 0 24 24" aria-hidden="true" className="w-5 h-5 fill-current">
+                        <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm9.75 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
+                      </svg>
+                    </a>
+                  )}
+
+                  {coach.email && (
+                    <a
+                      href={`mailto:${coach.email}`}
+                      aria-label={`Email ${coach.name}`}
+                      title={coach.email}
+                      className="inline-flex items-center justify-center w-10 h-10 rounded-sm border transition-colors"
+                      style={{ borderColor: '#2a2a2a', color: '#C8102E', background: '#141414' }}
+                    >
+                      <svg viewBox="0 0 24 24" aria-hidden="true" className="w-5 h-5 fill-current">
+                        <path d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2 .09v10.41c0 .41.34.75.75.75h12.5c.41 0 .75-.34.75-.75V6.84l-6.28 4.77a1.25 1.25 0 0 1-1.52 0L5 6.84Zm12.77-.84H6.23L12 10.37 17.77 6Z" />
+                      </svg>
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
           </div>
         ))}

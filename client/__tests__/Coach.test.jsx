@@ -38,7 +38,7 @@ describe('Coach', () => {
   it('renders all skill-level tags', () => {
     render(<Coach />)
     expect(screen.getAllByText('Muay Thai').length).toBeGreaterThanOrEqual(1)
-    expect(screen.getByText('MMA Strategy')).toBeInTheDocument()
+    expect(screen.getAllByText('MMA Strategy').length).toBeGreaterThanOrEqual(1)
     expect(screen.getAllByText('All Levels').length).toBeGreaterThanOrEqual(1)
   })
 })
