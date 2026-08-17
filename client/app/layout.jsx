@@ -7,7 +7,7 @@ export const metadata = {
     template: '%s | Third Space MMA',
   },
   description:
-    'Top-rated MMA gym serving Granada Hills, Northridge, Sylmar, San Fernando & the entire San Fernando Valley. Train Muay Thai, Jiu-Jitsu & MMA with pro fighter Arsalan Mayel. All levels welcome. Drop-in $30 — no contract, no commitment.',
+    'Top-rated MMA gym serving Granada Hills, Northridge, Sylmar, San Fernando & the entire San Fernando Valley. Train Muay Thai, Jiu-Jitsu & MMA with fighter Arsalan Mayel. All levels welcome. Drop-in $30 — no contract, no commitment.',
   keywords: [
     'MMA gym San Fernando CA',
     'MMA near me',
@@ -81,7 +81,7 @@ export const metadata = {
     siteName: 'Third Space MMA',
     title: 'Third Space MMA | #1 MMA Gym in Granada Hills, Northridge & San Fernando Valley',
     description:
-      'Train Muay Thai, Jiu-Jitsu & MMA with pro fighter Arsalan Mayel. Serving Granada Hills, Northridge, Sylmar & all of SFV. First class $30 — all levels welcome.',
+      'Train Muay Thai, Jiu-Jitsu & MMA with MMA fighter Arsalan Mayel. Serving Granada Hills, Northridge, Sylmar & all of SFV. First class $30 — all levels welcome.',
     images: [
       {
         url: '/og-image.jpg',

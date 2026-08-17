@@ -4,7 +4,7 @@
 export default function Coach() {
   const stats = [
     { value: '14+', label: 'Years Experience' },
-    { value: 'PRO', label: 'MMA Fighter' },
+    { value: 'PRO', label: 'Muay Thai Fighter' },
     { value: '3', label: 'Disciplines' },
     { value: '∞', label: 'Levels Coached' },
   ]
@@ -68,10 +68,6 @@ export default function Coach() {
             >
               Arsalan Mayel
             </h2>
-            {/* Title in white — red eyebrow is above, no green/red proximity */}
-            <p className="heading-display text-2xl mb-8 text-gray-400">
-              Professional MMA Fighter &amp; Coach
-            </p>
 
             <div className="space-y-4 text-gray-400 font-light leading-relaxed text-[15px] mb-10">
               <p>

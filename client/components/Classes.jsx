@@ -29,7 +29,7 @@ export default function Classes() {
       label: 'MMA',
       tagline: 'The Complete Fighter',
       description:
-        'Where all the arts converge. MMA classes blend striking and grappling into a unified game plan — taught by a professional fighter who competes at the highest level.',
+        'Where all the arts converge. MMA classes blend striking and grappling into a unified game plan — taught by an MMA champion who competes at the highest level.',
 
       details: ['Striking to grappling transitions', 'MMA-specific ground & pound', 'Fight IQ development', 'Competition prep available'],
       color: '#1A6B3A',
