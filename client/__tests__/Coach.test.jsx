@@ -7,14 +7,19 @@ describe('Coach', () => {
     expect(screen.getByRole('heading', { name: /Arsalan Mayel/i })).toBeInTheDocument()
   })
 
+  it('renders Alex Pyle profile', () => {
+    render(<Coach />)
+    expect(screen.getByRole('heading', { name: /Alex Pyle/i })).toBeInTheDocument()
+  })
+
   it('renders the coach section label', () => {
     render(<Coach />)
     expect(screen.getByText(/Head Coach/i)).toBeInTheDocument()
   })
 
-  it('renders Professional MMA Fighter title', () => {
+  it('renders Professional Muay Thai Fighter title', () => {
     render(<Coach />)
-    const matches = screen.getAllByText(/Professional MMA Fighter/i)
+    const matches = screen.getAllByText(/Professional Muay Thai Fighter/i)
     expect(matches.length).toBeGreaterThanOrEqual(1)
   })
 
@@ -26,13 +31,14 @@ describe('Coach', () => {
 
   it('renders PRO credential', () => {
     render(<Coach />)
-    expect(screen.getByText('PRO')).toBeInTheDocument()
+    const proStats = screen.getAllByText('PRO')
+    expect(proStats.length).toBeGreaterThanOrEqual(1)
   })
 
   it('renders all skill-level tags', () => {
     render(<Coach />)
-    expect(screen.getByText('Muay Thai')).toBeInTheDocument()
+    expect(screen.getAllByText('Muay Thai').length).toBeGreaterThanOrEqual(1)
     expect(screen.getByText('MMA Strategy')).toBeInTheDocument()
-    expect(screen.getByText('All Levels')).toBeInTheDocument()
+    expect(screen.getAllByText('All Levels').length).toBeGreaterThanOrEqual(1)
   })
 })
