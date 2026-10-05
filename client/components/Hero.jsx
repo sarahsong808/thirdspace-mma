@@ -196,7 +196,7 @@ export default function Hero() {
             </a>
           </div>
           <p className="text-gray-500 text-xs tracking-widest">
-            Drop in for your first class &nbsp;·&nbsp; all levels welcome
+            Claim your $59 week trial &nbsp;·&nbsp; all levels welcome
           </p>
         </div>
       </div>

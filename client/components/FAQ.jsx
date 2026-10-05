@@ -30,7 +30,7 @@ const FAQS = [
   },
   {
     q: 'Can I try before committing to a membership?',
-    a: 'Yes. Drop-in classes are $30 with no commitment. There is also a trial week for $60 that gives you unlimited access for 7 days with no pressure and no contract.',
+    a: 'Yes. Drop-in classes are $29 with no commitment. There is also a trial week for $59 that gives you unlimited access for 7 days with no pressure and no contract.',
   },
   {
     q: 'Where are you located? Do you serve Granada Hills, Northridge, or Sylmar?',
